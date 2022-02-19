@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.vytrack.runners.FailedTestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in com.vytrack.runners.FailedTestRunner
+initializationError(com.vytrack.runners.FailedTestRunner)  Time elapsed: 0 s  <<< ERROR!
+io.cucumber.core.exception.CucumberException: Failed to parse 'target\rerun.text'
+Caused by: java.nio.file.NoSuchFileException: target\rerun.text
+
