@@ -1,827 +1,68 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/ManageFilters.feature");
 formatter.feature({
-  "name": "Default",
+  "name": "Manage Filter Function",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@FLTAPS-1031"
+      "name": "@new"
     }
   ]
 });
-formatter.scenarioOutline({
-  "name": "Login with valid credentials",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1007"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
-});
-formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "The user login using \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "The user should see \"\u003ctitle\u003e\"",
-  "keyword": "Then "
-});
-formatter.examples({
+formatter.background({
   "name": "",
   "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password",
-        "title"
-      ]
-    },
-    {
-      "cells": [
-        "user1",
-        "UserUser123",
-        "Quick Launchpad"
-      ]
-    },
-    {
-      "cells": [
-        "salesmanager105",
-        "UserUser123",
-        "Dashboard"
-      ]
-    },
-    {
-      "cells": [
-        "storemanager85",
-        "UserUser123",
-        "Dashboard"
-      ]
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Login with valid credentials",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1007"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
+  "keyword": "Background"
 });
 formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user is on the login page",
+  "name": "The user logged in as \"sales manager\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.The_user_logged_in_as(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user login using \"user1\" and \"UserUser123\"",
+  "name": "The user navigates to \"Fleet\" \"Vehicles\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.theUserLoginUsingAnd(java.lang.String,java.lang.String)"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.The_user_navigates_to(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user should see \"Quick Launchpad\"",
-  "keyword": "Then "
+  "name": "The user clicks on filterIcon",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_should_see(java.lang.String)"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.theUserClicksOnFilterIcon()"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Quick Launchpa]d\u003e but was:\u003c[Dashboar]d\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrack.step_definitions.LoginStepDefinition.the_user_should_see(LoginStepDefinition.java:32)\r\n\tat ✽.The user should see \"Quick Launchpad\"(file:///C:/Users/hayda/Desktop/VytrackAutomation/src/test/resources/features/login.feature:9)\r\n",
-  "status": "failed"
-});
-formatter.embedding("image/png", "embedded0.png", "screenshot");
-formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Login with valid credentials",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1007"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user login using \"salesmanager105\" and \"UserUser123\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.theUserLoginUsingAnd(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should see \"Dashboard\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_should_see(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login with valid credentials",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1007"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user login using \"storemanager85\" and \"UserUser123\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.theUserLoginUsingAnd(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should see \"Dashboard\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_should_see(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "name": "Login with invaid credentials",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1008"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
-});
-formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "The user login using invalid \"\u003cusername\u003e\" or \"\u003cpassword\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "The user should see error \"\u003cmessage\u003e\"",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password",
-        "message"
-      ]
-    },
-    {
-      "cells": [
-        "wrongusername",
-        "UserUser123",
-        "Invalid user name or password."
-      ]
-    },
-    {
-      "cells": [
-        "salesmanager105",
-        "wrongpassword",
-        "Invalid user name or password."
-      ]
-    },
-    {
-      "cells": [
-        "storemanager85",
-        "wrongpassword",
-        "Invalid user name or password."
-      ]
-    },
-    {
-      "cells": [
-        "user1",
-        "wrongpassword",
-        "Invalid user name or password."
-      ]
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Login with invaid credentials",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1008"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user login using invalid \"wrongusername\" or \"UserUser123\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_login_using_invalid_or(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should see error \"Invalid user name or password.\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.theUserShouldSeeError(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login with invaid credentials",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1008"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user login using invalid \"salesmanager105\" or \"wrongpassword\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_login_using_invalid_or(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should see error \"Invalid user name or password.\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.theUserShouldSeeError(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login with invaid credentials",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1008"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user login using invalid \"storemanager85\" or \"wrongpassword\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_login_using_invalid_or(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should see error \"Invalid user name or password.\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.theUserShouldSeeError(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login with invaid credentials",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1008"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user login using invalid \"user1\" or \"wrongpassword\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_login_using_invalid_or(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should see error \"Invalid user name or password.\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.theUserShouldSeeError(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "name": "Login with empty fields",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1009"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
-});
-formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "The user login using empty \"\u003cusername\u003e\" or \"\u003cpassword\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "The user should see inputError\"\u003cmessage\u003e\"",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password",
-        "message"
-      ]
-    },
-    {
-      "cells": [
-        "user1",
-        "",
-        "Please fill out this field"
-      ]
-    },
-    {
-      "cells": [
-        "salesmanager105",
-        "",
-        "Please fill out this field"
-      ]
-    },
-    {
-      "cells": [
-        "storemanager85",
-        "",
-        "Please fill out this field"
-      ]
-    },
-    {
-      "cells": [
-        "",
-        "UserUser123",
-        "Please fill out this field"
-      ]
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Login with empty fields",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1009"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user login using empty \"user1\" or \"\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_login_using_empty_or(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should see inputError\"Please fill out this field\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.theUserShouldSeeInputError(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login with empty fields",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1009"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user login using empty \"salesmanager105\" or \"\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_login_using_empty_or(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should see inputError\"Please fill out this field\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.theUserShouldSeeInputError(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login with empty fields",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1009"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user login using empty \"storemanager85\" or \"\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_login_using_empty_or(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should see inputError\"Please fill out this field\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.theUserShouldSeeInputError(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login with empty fields",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1009"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user login using empty \"\" or \"UserUser123\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_login_using_empty_or(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should see inputError\"Please fill out this field\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.theUserShouldSeeInputError(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Forgot password page",
+  "name": "Manage Filter Button visible",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1010"
-    },
-    {
-      "name": "@FLTAPS-1006"
+      "name": "@new"
     }
   ]
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user clicks on the Forgot your password link",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_clicks_on_the_Forgot_your_password_link()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user navigates to the Forgot Password page",
+  "name": "The user should see Manage Filter button became visible",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_navigates_to_the_Forgot_Password_page()"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.the_user_should_see_Manage_Filter_button_became_visible()"
 });
 formatter.result({
   "status": "passed"
@@ -829,41 +70,91 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user logged in as \"sales manager\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.The_user_logged_in_as(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user navigates to \"Fleet\" \"Vehicles\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.The_user_navigates_to(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user clicks on filterIcon",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.theUserClicksOnFilterIcon()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.scenario({
-  "name": "Remember Me Checkbox",
+  "name": "Manage Filter options list",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1011"
-    },
-    {
-      "name": "@FLTAPS-1006"
+      "name": "@new"
     }
   ]
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
+  "name": "The user clicks on Manage Filter Menu",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.the_user_clicks_on_Manage_Filter_Menu()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user can see Remember Me link exists and is clickable",
+  "name": "The user should see the following Manage Filter options",
+  "rows": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.theUserCanSeeRememberMeLinkExistsAndIsClickable()"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.the_user_should_see_the_following_Manage_Filter_options(java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
   "status": "passed"
@@ -871,267 +162,70 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.scenarioOutline({
-  "name": "Verifying the Enter key",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1012"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
-});
-formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "The user login using \"\u003cusername\u003e\" and \"\u003cpassword\u003e\" with keyboard enter key",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "The user should see \"\u003ctitle\u003e\"",
-  "keyword": "Then "
-});
-formatter.examples({
+formatter.background({
   "name": "",
   "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password",
-        "title"
-      ]
-    },
-    {
-      "cells": [
-        "user1",
-        "UserUser123",
-        "Dashboard"
-      ]
-    },
-    {
-      "cells": [
-        "salesmanager105",
-        "UserUser123",
-        "Dashboard"
-      ]
-    },
-    {
-      "cells": [
-        "storemanager85",
-        "UserUser123",
-        "Dashboard"
-      ]
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Verifying the Enter key",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1012"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
+  "keyword": "Background"
 });
 formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user is on the login page",
+  "name": "The user logged in as \"sales manager\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.The_user_logged_in_as(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user login using \"user1\" and \"UserUser123\" with keyboard enter key",
+  "name": "The user navigates to \"Fleet\" \"Vehicles\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_login_using_and_with_keyboard_enter_key(java.lang.String,java.lang.String)"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.The_user_navigates_to(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user should see \"Dashboard\"",
-  "keyword": "Then "
+  "name": "The user clicks on filterIcon",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_should_see(java.lang.String)"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.theUserClicksOnFilterIcon()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Verifying the Enter key",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1012"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user login using \"salesmanager105\" and \"UserUser123\" with keyboard enter key",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_login_using_and_with_keyboard_enter_key(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should see \"Dashboard\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_should_see(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Verifying the Enter key",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1012"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user login using \"storemanager85\" and \"UserUser123\" with keyboard enter key",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_login_using_and_with_keyboard_enter_key(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should see \"Dashboard\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_should_see(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Verifying the bullet signs",
+  "name": "Apply filters by clicking",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1013"
-    },
-    {
-      "name": "@FLTAPS-1006"
+      "name": "@new"
     }
   ]
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user enters password",
+  "name": "The user clicks on Manage Filter Menu",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_enters_password()"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.the_user_clicks_on_Manage_Filter_Menu()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user should see the password in bullet signs by default",
+  "name": "The user can select the filter name by clicking from the Manage filters menu",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_should_see_the_password_in_bullet_signs_by_default()"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.the_user_can_select_the_filter_name_by_clicking_from_the_Manage_filters_menu()"
 });
 formatter.result({
   "status": "passed"
@@ -1139,111 +233,70 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.scenarioOutline({
-  "name": "Verifying the Profile Name",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1014"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
-});
-formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "The user login using \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "The user should see user\"\u003cprofileName\u003e\"",
-  "keyword": "Then "
-});
-formatter.examples({
+formatter.background({
   "name": "",
   "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password",
-        "profileName"
-      ]
-    },
-    {
-      "cells": [
-        "user1",
-        "UserUser123",
-        "John Doe"
-      ]
-    },
-    {
-      "cells": [
-        "salesmanager105",
-        "UserUser123",
-        "John Doe"
-      ]
-    },
-    {
-      "cells": [
-        "storemanager85",
-        "UserUser123",
-        "John Doe"
-      ]
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Verifying the Profile Name",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1014"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
+  "keyword": "Background"
 });
 formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user is on the login page",
+  "name": "The user logged in as \"sales manager\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.The_user_logged_in_as(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user login using \"user1\" and \"UserUser123\"",
+  "name": "The user navigates to \"Fleet\" \"Vehicles\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.theUserLoginUsingAnd(java.lang.String,java.lang.String)"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.The_user_navigates_to(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user should see user\"John Doe\"",
+  "name": "The user clicks on filterIcon",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.theUserClicksOnFilterIcon()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Apply filters by typing",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@new"
+    }
+  ]
+});
+formatter.step({
+  "name": "The user clicks on Manage Filter Menu",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.the_user_clicks_on_Manage_Filter_Menu()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user can select the filter name by typing from the Manage filters menu",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.theUserShouldSeeUser(java.lang.String)"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.the_user_can_select_the_filter_name_by_typing_from_the_Manage_filters_menu()"
 });
 formatter.result({
   "status": "passed"
@@ -1251,103 +304,100 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Verifying the Profile Name",
+formatter.background({
+  "name": "",
   "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1014"
-    },
-    {
-      "name": "@FLTAPS-1006"
-    }
-  ]
+  "keyword": "Background"
 });
 formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user is on the login page",
+  "name": "The user logged in as \"sales manager\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.The_user_logged_in_as(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user login using \"salesmanager105\" and \"UserUser123\"",
+  "name": "The user navigates to \"Fleet\" \"Vehicles\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.theUserLoginUsingAnd(java.lang.String,java.lang.String)"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.The_user_navigates_to(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user should see user\"John Doe\"",
-  "keyword": "Then "
+  "name": "The user clicks on filterIcon",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.theUserShouldSeeUser(java.lang.String)"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.theUserClicksOnFilterIcon()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Verifying the Profile Name",
+  "name": "Apply multiple filters at the same time and Remove the all",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "name": "@FLTAPS-1031"
-    },
-    {
-      "name": "@FLTAPS-1014"
-    },
-    {
-      "name": "@FLTAPS-1006"
+      "name": "@new"
     }
   ]
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
-  "name": "The user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.the_user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user login using \"storemanager85\" and \"UserUser123\"",
+  "name": "The user clicks on Manage Filter Menu",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.theUserLoginUsingAnd(java.lang.String,java.lang.String)"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.the_user_clicks_on_Manage_Filter_Menu()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user should see user\"John Doe\"",
+  "name": "The user can select multiple filters at the same time from the Manage filters menu",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefinition.theUserShouldSeeUser(java.lang.String)"
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.the_user_can_select_multiple_filters_at_the_same_time_from_the_Manage_filters_menu()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user clicks on the Reset icon",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.the_user_clicks_on_the_Reset_icon()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user clicks on Manage Filter Menu",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.the_user_clicks_on_Manage_Filter_Menu()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user can remove all filters by clicking on the reset icon",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.ManageFilterStepDefs.the_user_can_remove_all_filters_by_clicking_on_the_reset_icon()"
 });
 formatter.result({
   "status": "passed"

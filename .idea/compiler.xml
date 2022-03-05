@@ -9,5 +9,8 @@
         <module name="VytrackAutomation" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="VytrackAutomation" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

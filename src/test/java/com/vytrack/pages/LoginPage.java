@@ -58,5 +58,24 @@ public class LoginPage extends BasePage{
         loginPage.password.sendKeys(passwordStr);
         loginPage.submit.click();
     }
+    public void loggedAs (String userType){
+        Driver.get().get(ConfigurationReader.get("url"));
+
+        String username ="";
+        String password ="";
+
+        if(userType.equals("driver")){
+            username = ConfigurationReader.get("driver_username");
+            password = ConfigurationReader.get("driver_password");
+        }else if(userType.equals("sales manager")){
+            username = ConfigurationReader.get("salesmanager_username");
+            password = ConfigurationReader.get("salesmanager_password");
+        }else if(userType.equals("store manager")){
+            username = ConfigurationReader.get("storemanager_username");
+            password = ConfigurationReader.get("storemanager_password");
+        }
+
+        new LoginPage().login(username,password);
+    }
 
    }
